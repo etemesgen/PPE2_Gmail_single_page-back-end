@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link rel="stylesheet" type="text/css" href="./css/connexion.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" type="image/png" href="./image/mail.ico" />
+    <title>Gmail</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <section id="logo">
+          <img src="./image/mail.png" alt="Gmail" />
+          <p>Gmail</p>
+        </section>
+        <section id="menu">
+          <ul>
+            <li><a href="./index.html">POUR LES PROS</a></li>
+            <li><a href="./connexion.html">CONNEXION</a></li>
+            <li><a href="./index.html">CRÉER UN COMPTE</a></li>
+          </ul>
+        </section>
+      </nav>
+    </header>
+
+    <main>
+      <section id="connexionForm">
+        <h1>Bienvenue dans votre espace</h1>
+        <br />
+        <br />
+        <p id="warning"></p>
+        <br />
+        <br />
+        <fieldset>
+          <legend>Connectez-vous à votre compte</legend>
+          <form action="connexion.html" method="get">
+            <label for="email">Mail ou login *</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Votre mail"
+              aria-required="true"
+            />
+
+            <label for="password">Mot de passe *</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Votre mot de passe"
+              aria-required="true"
+            />
+
+            <input
+              id="connexion"
+              type="submit"
+              value="Connexion à votre compte"
+            />
+          </form>
+        </fieldset>
+      </section>
+    </main>
+
+    <script src="./js/connexion.js"></script>
+  </body>
+</html>

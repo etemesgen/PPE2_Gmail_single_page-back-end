@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" type="image/png" href="./image/mail.ico" />
+    <title>Gmail</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <section id="logo">
+          <img src="./image/mail.png" alt="Gmail" />
+          <p>Gmail</p>
+        </section>
+        <section id="menu">
+          <ul>
+            <li><a href="#">POUR LES PROS</a></li>
+            <li><a href="./connexion.html">CONNEXION</a></li>
+            <li><a href="./index.html">CRÉER UN COMPTE</a></li>
+          </ul>
+        </section>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home">
+        <img src="./image/home-hero.jpg" />
+        <p>
+          Retrouvez la fluidité et la <br />
+          simplicité de Gmail sur <br />
+          tous vos appareil
+          <a href="#form">CRÉER UN COMPTE</a>
+        </p>
+      </section>
+      <section id="arrow">
+        <a href="#form"><img src="./image/arrow.png" /></a>
+      </section>
+
+      <div id="form" role="region">
+        <h1>
+          Une boîte de réception <br />
+          entièrement repensée
+        </h1>
+        <p>
+          Avec les nouveaux onglets personnalisables, repérez <br />
+          immédiatement les nouveaux messages et choisissez <br />
+          ceux que vous souhaitez lire en priorité.
+        </p>
+        <p id="warning"></p>
+        <br />
+        <fieldset>
+          <legend>Créer un compte</legend>
+          <form action="<?php $_SERVER['PHP_SELF']?>" method="post">
+            <label for="nom">Nom *</label>
+            <input
+              type="text"
+              name="nom"
+              id="nom"
+              placeholder="Votre nom"
+              autofocus
+            />
+            <label for="prenom">Prénom *</label>
+            <input
+              type="text"
+              name="prenom"
+              id="prenom"
+              placeholder="Votre prénom"
+              autofocus
+            />
+            <label for="mail">Mail *</label>
+            <input
+              type="text"
+              name="mail"
+              id="mail"
+              placeholder="Votre mail"
+              autofocus
+            />
+            <label for="password">Choisir votre mot de passe *</label>
+            <input
+              type="text"
+              name="password"
+              id="password"
+              placeholder="Votre mot de passe"
+              autofocus
+            />
+            <input type="submit" value="VALIDER VOTRE COMPTE" />
+          </form>
+        </fieldset>
+      </div>
+    </main>
+
+    <footer></footer>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
