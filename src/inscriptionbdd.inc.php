@@ -21,7 +21,5 @@
                 <a href=\"connexion.php\" title=\"pub\">Connectez vous</a>
                 
         </p>";
-        print $nom;
-        
     }		
 ?>
