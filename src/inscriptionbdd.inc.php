@@ -18,8 +18,7 @@
         $req->execute(array('nom' => $_POST['nom'],'prenom' => $_POST['prenom'],'mail' => $_POST['mail'], password_hash($_POST['password'],PASSWORD_DEFAULT)));
         
         echo "<p class=\"success\">Merci votre contenu est ajouté : 
-                <a href=\"connexion.php\" title=\"pub\">Connectez vous</a>
-                
+                <a href=\"connexion.php\" title=\"pub\">Connectez vous</a>        
         </p>";
     }		
 ?>
