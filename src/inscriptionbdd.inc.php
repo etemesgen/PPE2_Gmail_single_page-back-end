@@ -13,7 +13,6 @@
         $nom = $_POST["nom"];
         $prenom = $_POST["prenom"];
         $email = $_POST["mail"];
-        print $nom;
 
         $req = $bdd->prepare('INSERT INTO user_mail(nom, prenom, mail, password)VALUES(?,?,?,?)');
         $req->execute(array('nom' => $_POST['nom'],'prenom' => $_POST['prenom'],'mail' => $_POST['mail'], password_hash($_POST['password'],PASSWORD_DEFAULT)));
