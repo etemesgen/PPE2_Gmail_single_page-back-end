@@ -31,13 +31,13 @@
         <p id="warning"></p>
         <br />
         <br />
-       
+
         <fieldset>
           <legend>Connectez-vous à votre compte</legend>
           <form action="connexion.php" method="get">
             <label for="mail">Mail ou login *</label>
             <input
-              type="email"
+              type="text"
               id="mail"
               name="mail"
               placeholder="Votre mail"

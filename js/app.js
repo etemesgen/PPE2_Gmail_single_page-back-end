@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', (e)=>{
-	e.preventDefault()
+	 e.preventDefault()
 	 console.log("loaded")
 	//  const linkList = document.querySelectorAll("header nav ul:nth-child(2) li a");
 	  const submitBtn = document.getElementsByTagName("input")[4];
@@ -28,8 +28,7 @@ document.addEventListener('DOMContentLoaded', (e)=>{
 	  })
   
   
-	  submitBtn.addEventListener("click", (e)=> {
-		  e.preventDefault();
+	  submitBtn.addEventListener("click", ()=> {
 		  User.userDataControll();
 	})	  
 })

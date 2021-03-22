@@ -47,11 +47,11 @@
         <br />
 
         <?php
-      //include_once('./src/inscriptionbdd.inc.php');
-    ?>
+          include_once('./src/inscriptionbdd.inc.php');
+        ?>
         <fieldset>
           <legend>Créer un compte</legend>
-          <form action="#" method="post">
+          <form action="./connexion.php" method="post">
             <label for="nom">Nom *</label>
             <input
               type="text"

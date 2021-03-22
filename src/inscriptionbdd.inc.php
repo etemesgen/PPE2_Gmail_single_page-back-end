@@ -7,18 +7,17 @@
     {
         die('Erreur : '.$e->getMessage());
     }
-
-
-    if(isset($_POST['nom']) || isset($_POST['prenom']) || isset($_POST['mail']) || isset($_POST['password'])){
+    
+    if(isset($_POST['nom']) && isset($_POST['prenom']) && isset($_POST['mail']) && isset($_POST['password'])){
         $nom = $_POST["nom"];
         $prenom = $_POST["prenom"];
-        $email = $_POST["mail"];
+        $mail = $_POST["mail"];
 
         $req = $bdd->prepare('INSERT INTO user_mail(nom, prenom, mail, password)VALUES(?,?,?,?)');
-        $req->execute(array('nom' => $_POST['nom'],'prenom' => $_POST['prenom'],'mail' => $_POST['mail'], password_hash($_POST['password'],PASSWORD_DEFAULT)));
+        $req->execute(array($_POST['nom'], $_POST['prenom'], $_POST['mail'], password_hash($_POST['password'],PASSWORD_DEFAULT)));
         
-        echo "<p class=\"success\">Merci votre contenu est ajouté : 
+        echo "<p class=\"success\" style='margin: 10rem 0rem 0rem 50rem; position:absolute;' >Merci votre contenu est ajouté : 
                 <a href=\"connexion.php\" title=\"pub\">Connectez vous</a>        
         </p>";
-    }		
+    }
 ?>
