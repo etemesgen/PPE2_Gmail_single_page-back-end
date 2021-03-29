@@ -32,3 +32,5 @@ document.addEventListener('DOMContentLoaded', (e)=>{
 		  User.userDataControll();
 	})	  
 })
+
+/*Prevent Default à résoudre*/

@@ -173,11 +173,18 @@ input[type="submit"] {
 .warning {
   background-color: #dd5347;
   width: 30rem;
-  color: white;
+  color: #fff;
 }
 
 .success {
   background-color: rgb(23, 185, 23);
   width: 30rem;
-  color: white;
+  color: #fff;
+}
+
+.warning,
+.success {
+  text-align: center;
+  margin: 0 auto;
+  padding: 1rem;
 }

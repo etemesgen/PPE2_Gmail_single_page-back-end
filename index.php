@@ -6,7 +6,7 @@
     <header>
       <nav>
         <section id="logo">
-          <img src="./image/mail.png" alt="Gmail" />
+          <img src="./image/mail.png" alt="Gmail">
           <p>Gmail</p>
         </section>
         <section id="menu">
@@ -21,7 +21,7 @@
 
     <main>
       <section id="home">
-        <img src="./image/home-hero.jpg" />
+        <img src="./image/home-hero.jpg" alt="logo home page">
         <p>
           Retrouvez la fluidité et la <br />
           simplicité de Gmail sur <br />
@@ -30,7 +30,7 @@
         </p>
       </section>
       <section id="arrow">
-        <a href="#form"><img src="./image/arrow.png" /></a>
+        <a href="#form"><img src="./image/arrow.png" alt="indication vers le bas"></a>
       </section>
 
       <div id="form" role="region">
@@ -46,10 +46,11 @@
         <p id="warning"></p>
         <br />
 
+       
+        <fieldset>
         <?php
           include_once('./src/inscriptionbdd.inc.php');
         ?>
-        <fieldset>
           <legend>Créer un compte</legend>
           <form action="./connexion.php" method="post">
             <label for="nom">Nom *</label>
@@ -66,7 +67,6 @@
               name="prenom"
               id="prenom"
               placeholder="Votre prénom"
-              autofocus
             />
             <label for="mail">Mail *</label>
             <input
@@ -74,7 +74,6 @@
               name="mail"
               id="mail"
               placeholder="Votre mail"
-              autofocus
             />
             <label for="password">Choisir votre mot de passe *</label>
             <input
@@ -82,12 +81,10 @@
               name="password"
               id="password"
               placeholder="Votre mot de passe"
-              autofocus
             />
             <input type="submit" value="VALIDER VOTRE COMPTE" />
           </form>
         </fieldset>
-        <p id="success"></p>
       </div>
 
 

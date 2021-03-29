@@ -2,9 +2,6 @@
     include_once('./src/connexionheader.inc.php');
 ?>
 
-<?php
-        include_once('./src/inscriptionbdd.inc.php');
-?>
 
 <body>
     <header>
@@ -33,6 +30,9 @@
         <br />
 
         <fieldset>
+        <?php
+        include_once('./src/inscriptionbdd.inc.php');
+        ?>
           <legend>Connectez-vous à votre compte</legend>
           <form action="connexion.php" method="get">
             <label for="mail">Mail ou login *</label>
